@@ -1,6 +1,6 @@
 # Plan: Standalone OpenClaw LINE Channel Plugin
 
-**Package name:** `@azmodanz/openclaw-line`
+**Package name:** `@rasenx/openclaw-line`
 (Uses your npm username as the scope. Create the org at https://www.npmjs.com/org/create before publishing.)
 
 **Why standalone:** `@openclaw/line` is `"private": true` in the monorepo — never published to npm. The `@openclaw/` scope is owned by upstream. We publish under our own scope, installable by anyone.
@@ -108,7 +108,7 @@ openclaw-line/
 **`package.json`:**
 ```json
 {
-  "name": "@azmodanz/openclaw-line",
+  "name": "@rasenx/openclaw-line",
   "version": "1.0.0",
   "type": "module",
   "files": ["index.ts", "src/"],
@@ -127,7 +127,7 @@ openclaw-line/
       "docsPath": "/channels/line"
     },
     "install": {
-      "npmSpec": "@azmodanz/openclaw-line"
+      "npmSpec": "@rasenx/openclaw-line"
     }
   }
 }
@@ -436,7 +436,7 @@ Use **vitest** (zero-config TypeScript, no build step needed).
 ### Step 11 — npm Publish
 
 **Pre-publish checklist:**
-- [ ] Create npm org scope: https://www.npmjs.com/org/create → use `azmodanz`
+- [ ] Create npm org scope: https://www.npmjs.com/org/create → use `rasenx`
 - [ ] `"files": ["index.ts", "src/"]` — no compiled output needed
 - [ ] `README.md` written
 - [ ] All tests passing
@@ -449,7 +449,7 @@ npm publish --access public
 
 **Users install with:**
 ```bash
-openclaw plugins install @azmodanz/openclaw-line
+openclaw plugins install @rasenx/openclaw-line
 ```
 
 ---
